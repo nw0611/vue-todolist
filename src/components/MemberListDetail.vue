@@ -12,7 +12,7 @@
           <tr v-for="item in detailList" :key="item.id">
             <td>
               <label class="list-item-label list-item-label-checkbox" v-bind:class="{done: item.editing}">
-                <input type="checkbox" class="list-item-checkbox" v-model="item.isChecked" />
+                <input type="checkbox" class="checkbox list-item-checkbox" v-model="item.isChecked" />
                 <span v-text="item.todo" v-bind:class="{comp: item.isChecked}">{{item.todo}}</span>
               </label>
               <label class="list-item-label" v-bind:class="{done: !item.editing}">
@@ -95,48 +95,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.table-todo {
-  table-layout: fixed;
-  word-wrap: break-word;
-}
-.list-item-label {
-  display: block;
-  width: 100%;
-}
-.list-item-label-checkbox {
-  padding-left: 30px;
-  position: relative;
-}
-.list-item-checkbox {
-  left: 0;
-  margin-top: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%)
-}
-.list-item-editor {
-  width: 100%;
-}
-.todo-header-input {
-  padding-left: 8px;
-}
-.todo-header-checkbox {
-  width: 4%;
-}
-.todo-header-date,
-.todo-header-member {
-  padding-left: 10px;
-  width: 15%;
-}
-.todo-header-action {
-  width: 18%;
-}
-.done {
-  display: none;
-}
-.comp {
-  text-decoration: line-through;
-}
-</style>

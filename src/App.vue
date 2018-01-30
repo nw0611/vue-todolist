@@ -26,6 +26,6 @@ export default {
 }
 </script>
 
-<style>
-@import '../static/styles.css'
+<style lang="sass">
+@import '../static/styles.sass'
 </style>

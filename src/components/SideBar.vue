@@ -13,18 +13,18 @@
 </div>
 </template>
 
-<style scoped>
-.sidebar .nav .router-link-exact-active > a:after {
-  border-right: 17px solid #f4f3ef;
-  border-top: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: -1px;
-  top: 8px;
-}
-.sidebar .nav li > a {
-  line-height: 2;
-}
+<style scoped lang="sass">
+.sidebar .nav .router-link-exact-active > a:after
+  border-right: 17px solid #f4f3ef
+  border-top: 17px solid transparent
+  border-bottom: 17px solid transparent
+  content: ""
+  display: inline-block
+  position: absolute
+  right: -1px
+  top: 8px
+
+.sidebar .nav li > a
+  line-height: 2
+
 </style>

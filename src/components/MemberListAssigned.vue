@@ -24,33 +24,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.table-member {
-  table-layout: fixed;
-  word-wrap: break-word;
-}
-.table-member tr:hover {
-  background-color: #FFFCF5;
-}
-.table-member-Link {
-  cursor: pointer;
-  display: block;
-  color: #66615B;
-}
-.list-item-label {
-  display: block;
-  padding-left: 30px;
-  position: relative;
-}
-.list-item-editor {
-  width: 100%;
-}
-.member-header-id,
-.member-header-member {
-  padding-left: 8px;
-}
-.member-header-id {
-  width: 5%;
-}
-</style>

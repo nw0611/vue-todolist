@@ -74,31 +74,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.table-todo {
-  table-layout: fixed;
-  word-wrap: break-word;
-}
-.list-item-label {
-  display: block;
-  width: 100%;
-}
-.list-item-editor {
-  width: 100%;
-}
-.todo-header-id,
-.todo-header-action,
-.todo-header-member {
-  padding-left: 8px;
-}
-.todo-header-id {
-  width: 5%;
-}
-.todo-header-action {
-  width: 18%;
-}
-.done {
-  display: none;
-}
-</style>
