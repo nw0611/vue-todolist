@@ -7,16 +7,16 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Set Term</label>
-              <input type="text" class="form-control border-input" v-model="newDate">
+              <input type="text" class="form-control border-input" placeholder="ex:0131" v-model="newDate">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
               <label>Assign Member</label>
-              <select type="text" class="form-control border-input" placeholder="todo taro" v-model="selectedMember">
+              <select class="form-control border-input" v-model="selectedMember">
+                <option value="">no selected</option>
                 <option v-for="nameItem in members" :key="nameItem.id">{{nameItem.id}}:{{nameItem.member}}</option>
               </select>
-              <input type="hidden" value="">
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
           <div class="col-md-12">
             <div class="form-group">
               <label>Input Todo</label>
-              <input type="text" class="form-control border-input" v-model="newTodo" placeholder="TODO入力欄" />
+              <input type="text" class="form-control border-input" v-model="newTodo" placeholder="ex:TODO" />
             </div>
           </div>
         </div>
