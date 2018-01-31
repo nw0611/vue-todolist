@@ -25,12 +25,11 @@ const actions = {
     localStorage.setItem('elements', JSON.stringify(state.elements))
   },
   editTodo: function (editTarget) {
-    editTarget.todo = editTarget.todo
-    editTarget.date = editTarget.date
-    editTarget.member = editTarget.member
-    editTarget.memberId = editTarget.member.substr(0, editTarget.member.indexOf(':'))
     // 修正後に''の場合は削除
-    util.EmptyRempve('todo', editTarget)
+    if (editTarget.todo === '') {
+      this.deleteTodo(editTarget)
+      return
+    }
     localStorage.setItem('elements', JSON.stringify(state.elements))
   },
   addMember: function (newEntry) {
@@ -49,9 +48,11 @@ const actions = {
     localStorage.setItem('members', JSON.stringify(state.members))
   },
   editMember: function (editTarget) {
-    editTarget.member = editTarget.member
     // 修正後に''の場合は削除
-    util.EmptyRempve('member', editTarget)
+    if (editTarget.member === '') {
+      this.deleteMember(editTarget)
+      return
+    }
     localStorage.setItem('members', JSON.stringify(state.members))
   },
   makeId: function (state) {
@@ -67,11 +68,6 @@ const util = {
     return targetState.filter((item) => {
       return item.id !== deleteTarget.id
     })
-  },
-  EmptyRempve: function (key, editTarget) {
-    if (editTarget.key === '') {
-      this.deleteTodo(editTarget)
-    }
   }
 }
 
