@@ -6,9 +6,9 @@
 </template>
 
 <script>
-import AddMember from '@/components/AddMember'
-import AddMemberList from '@/components/AddMemberList'
-import store from '../store'
+import AddMember from '@/components/page/member/Create'
+import AddMemberList from '@/components/page/member/Update'
+import store from '@/store'
 
 export default {
   data () {

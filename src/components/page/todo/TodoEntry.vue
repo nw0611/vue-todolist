@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import AddTodo from '@/components/AddTodo'
-import AddTodoList from '@/components/AddTodoList'
-import store from '../store'
+import AddTodo from '@/components/page/todo/Create'
+import AddTodoList from '@/components/page/todo/Update'
+import store from '@/store'
 
 export default {
   data () {

@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import MemberListAssigned from '@/components/MemberListAssigned.vue'
-import store from '../store'
+import MemberListAssigned from '@/components/page/member/Read.vue'
+import store from '@/store'
 
 export default {
   data () {

@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import MemberListDetail from '@/components/MemberListDetail'
-import store from '../store'
+import MemberListDetail from '@/components/page/member/Detail'
+import store from '@/store'
 
 export default {
   data () {

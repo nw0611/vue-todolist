@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import TodoEntry from './page/TodoEntry'
+import TodoEntry from './components/page/todo/TodoEntry'
 import SideBar from '@/components/SideBar'
 
 export default {

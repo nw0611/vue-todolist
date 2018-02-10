@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import TodoEntry from '@/page/TodoEntry'
-import MemberEntry from '@/page/MemberEntry'
-import MemberList from '@/page/MemberList'
-import MemberDetail from '@/page/MemberDetail'
+import TodoEntry from '@/components/page/todo/TodoEntry'
+import MemberEntry from '@/components/page/member/MemberEntry'
+import MemberList from '@/components/page/member/MemberList'
+import MemberDetail from '@/components/page/member/MemberDetail'
 
 Vue.use(Router)
 
