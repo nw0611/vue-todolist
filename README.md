@@ -3,6 +3,7 @@
 * Vue.jsでTodoリストを作成。状態管理はstoreパターンで行う
 * 環境構築はvue-cli
 * CSSはbootstrapベースで作成
+* node.js：^v14.0.0
 
 ## Build Setup
 
