@@ -17,6 +17,10 @@ export default {
   components: {
     MemberListDetail
   },
+  beforeRouteEnter (to, from, next) {
+    document.title = 'MemberDetail'
+    next()
+  },
   methods: {
     deleteTodo (deleteTarget) {
       store.actions.deleteTodo(deleteTarget)

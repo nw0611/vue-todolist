@@ -22,6 +22,10 @@ export default {
     AddTodo,
     AddTodoList
   },
+  beforeRouteEnter (to, from, next) {
+    document.title = 'TodoEntry'
+    next()
+  },
   methods: {
     addTodo (newTodo) {
       store.actions.addTodo(newTodo)

@@ -17,6 +17,10 @@ export default {
   components: {
     MemberListAssigned
   },
+  beforeRouteEnter (to, from, next) {
+    document.title = 'MemberList'
+    next()
+  },
   methods: {
     deleteMember (deleteTarget) {
       store.actions.deleteMember(deleteTarget)

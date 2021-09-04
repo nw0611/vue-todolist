@@ -20,6 +20,10 @@ export default {
     AddMember,
     AddMemberList
   },
+  beforeRouteEnter (to, from, next) {
+    document.title = 'MemberEntry'
+    next()
+  },
   methods: {
     addMember (newMember) {
       store.actions.addMember(newMember)
